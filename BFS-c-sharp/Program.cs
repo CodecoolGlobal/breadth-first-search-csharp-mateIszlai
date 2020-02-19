@@ -4,12 +4,13 @@ using System.Collections.Generic;
 
 namespace BFS_c_sharp
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
             RandomDataGenerator generator = new RandomDataGenerator();
             List<UserNode> users = generator.Generate();
+            Handler handler = new Handler();
 
             foreach (var user in users)
             {
